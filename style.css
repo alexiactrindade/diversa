@@ -1950,4 +1950,17 @@ color: #000000;
   }
 }
 
+@media (max-width: 56.25rem) {
+  .container {
+    gap: 0.8rem;
+  }
 
+  .menu-toggle {
+    margin-left: 0.6rem;
+  }
+
+  .btn.desktop-btn {
+    padding: 0.55rem 0.9rem;
+    font-size: 0.8rem;
+  }
+}
