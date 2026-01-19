@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diversa - Blog</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Diversa">
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="sobre-nos.html">Sobre nós</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+
+      <a href="https://wa.me/5511941811567?text=Ol%C3%A1%2C%20quero%20mais%20informa%C3%A7%C3%B5es.%20" class="btn desktop-btn">Contrate-nos</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        ☰
+      </button>
+
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="blog-intro">
+    <div class="blog-intro-container">
+
+      <div class="blog-intro-text">
+        <h1>Blog</h1>
+        <p>
+          Conteúdos práticos sobre produção de eventos, experiências de marca e execução sem improviso.
+          Aqui você encontra o que funciona na vida real — do planejamento ao backstage.
+        </p>
+      </div>
+
+      <div class="blog-intro-actions">
+        <div class="blog-search">
+          <input id="blogSearch" type="text" placeholder="Buscar artigo..." />
+        </div>
+
+        <select id="blogCategory" class="blog-select" aria-label="Filtrar categoria">
+          <option value="all">Todas as categorias</option>
+          <option value="producao">Produção</option>
+          <option value="experiencia">Experiência</option>
+          <option value="estrategia">Estratégia</option>
+          <option value="bastidores">Bastidores</option>
+        </select>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DESTAQUE -->
+  <section class="blog-featured">
+    <div class="blog-featured-container">
+
+      <article class="blog-featured-card" data-category="estrategia">
+        <div class="blog-featured-image">
+          <img
+            src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?auto=format&fit=crop&w=1400&q=80"
+            alt="Evento com público e iluminação"
+          >
+        </div>
+
+        <div class="blog-featured-content">
+          <span class="blog-pill">Destaque</span>
+
+          <h2>Evento inesquecível não é sorte: é método</h2>
+
+          <p>
+            O público não lembra do “bonito”. Ele lembra do que foi bem conduzido.
+            Neste artigo, você entende como alinhar objetivo, fluxo e experiência para entregar um evento
+            com ritmo, segurança e impacto — sem correria de última hora.
+          </p>
+
+          <div class="blog-meta">
+            <span>Estratégia</span>
+            <span>•</span>
+            <span>6 min de leitura</span>
+          </div>
+
+          <a href="#" class="btn blog-read-btn">Ler artigo</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- LISTA -->
+  <section class="blog-list">
+    <div class="blog-list-container">
+
+      <div class="blog-list-header">
+        <h2>Últimos artigos</h2>
+        <p>
+          Dicas diretas para empresas e marcas que querem tirar o projeto do papel com execução profissional.
+        </p>
+      </div>
+
+      <div class="blog-grid" id="blogGrid">
+
+        <!-- 1 -->
+        <article class="blog-card" data-category="producao">
+          <div class="blog-card-image">
+            <img
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+              alt="Equipe em reunião de produção"
+            >
+          </div>
+
+          <div class="blog-card-content">
+            <span class="blog-tag">Produção</span>
+
+            <h3>Checklist de execução: o que não pode falhar no dia do evento</h3>
+
+            <p>
+              Um evento bem entregue não depende de improviso.
+              Depende de checklist, responsáveis claros e planos de contingência para o que sempre acontece.
+            </p>
+
+            <div class="blog-card-footer">
+              <span>4 min</span>
+              <a href="#" class="blog-link">Ler →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="blog-card" data-category="bastidores">
+          <div class="blog-card-image">
+            <img
+              src="https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1200&q=80"
+              alt="Backstage de evento"
+            >
+          </div>
+
+          <div class="blog-card-content">
+            <span class="blog-tag">Bastidores</span>
+
+            <h3>Backstage organizado: como evitar correria e ruído na operação</h3>
+
+            <p>
+              O público vê o palco. A entrega acontece nos bastidores.
+              Aqui vai o modelo de organização que reduz falhas, atrasos e retrabalho.
+            </p>
+
+            <div class="blog-card-footer">
+              <span>5 min</span>
+              <a href="#" class="blog-link">Ler →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="blog-card" data-category="experiencia">
+          <div class="blog-card-image">
+            <img
+              src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=1200&q=80"
+              alt="Público em evento ao ar livre"
+            >
+          </div>
+
+          <div class="blog-card-content">
+            <span class="blog-tag">Experiência</span>
+
+            <h3>O público sente antes de entender: como criar impacto de verdade</h3>
+
+            <p>
+              Experiência não é “encher de coisas”. É conduzir emoções com começo, meio e fim.
+              O que você faz nos primeiros 3 minutos muda tudo.
+            </p>
+
+            <div class="blog-card-footer">
+              <span>6 min</span>
+              <a href="#" class="blog-link">Ler →</a>
+            </div>
+          </div>
+        </article>
+
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <a href="index.html" class="footer-logo">
+        <img src="images/logo-footer.png" alt="Diversa">
+      </a>
+
+      <nav class="footer-nav">
+        <a href="sobre-nos.html">Sobre nós</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+
+      <p class="footer-copy">
+        2025 — Todos os direitos reservados.
+      </p>
+
+    </div>
+  </footer>
+
+  <script>
+    // menu mobile
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+
+    toggle.addEventListener("click", function () {
+      nav.classList.toggle("active");
+    });
+
+    // filtro + busca
+    const search = document.getElementById("blogSearch");
+    const category = document.getElementById("blogCategory");
+    const cards = Array.from(document.querySelectorAll(".blog-card"));
+
+    function normalize(text) {
+      return text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+
+    function filterBlog() {
+      const term = normalize(search.value.trim());
+      const cat = category.value;
+
+      cards.forEach(card => {
+        const title = normalize(card.querySelector("h3").textContent);
+        const desc = normalize(card.querySelector("p").textContent);
+        const cardCat = card.getAttribute("data-category");
+
+        const matchesText = title.includes(term) || desc.includes(term);
+        const matchesCat = (cat === "all") || (cardCat === cat);
+
+        card.style.display = (matchesText && matchesCat) ? "flex" : "none";
+      });
+    }
+
+    search.addEventListener("input", filterBlog);
+    category.addEventListener("change", filterBlog);
+  </script>
+
+</body>
+</html>
+
